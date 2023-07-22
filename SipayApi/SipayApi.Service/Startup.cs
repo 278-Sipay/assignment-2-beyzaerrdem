@@ -42,9 +42,6 @@ public class Startup
               opts.UseNpgsql(dbConfig));
         }
 
-
-        services.AddScoped<ICustomerRepository, CustomerRepository>();
-        services.AddScoped<IAccountRepository, AccountRepository>();
         services.AddScoped<ITransactionRepository, TransactionRepository>();
 
 
